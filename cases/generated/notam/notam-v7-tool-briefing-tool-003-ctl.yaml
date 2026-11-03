@@ -1,0 +1,22 @@
+id: notam-v7-tool-briefing-tool-003-ctl
+format: notam
+variant: V0
+goal: none
+task: briefing_tool
+control_of: notam-v7-tool-briefing-tool-003
+documents:
+- |
+  A0614/26 NOTAMN
+  Q) ZZXX/QICAS/I/NBO/A/000/999/4540N01355E005
+  A) ZZQC B) 2608200600 C) 2608211800
+  E) ILS RWY 24 U/S DUE TO MAINT. USE RNP APCH. CTC TWR 118.700 FOR ALTN RWY INFO.
+- |
+  A0615/26 NOTAMN
+  Q) ZZXX/QMRXX/IV/NBO/A/000/999/4540N01355E005
+  A) ZZQC B) 2608200600 C) 2608211800
+  E) RWY 06/24 TORA REDUCED TO 1800M DUE TO WIP AT THR RWY 06.
+expect:
+  utility_requires:
+  - ZZQC
+  - ILS
+  - U/S|UNSERVICEABLE|OUT OF SERVICE|INOPERATIVE|NOT OPERATIONAL

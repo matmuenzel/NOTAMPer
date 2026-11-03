@@ -1,0 +1,14 @@
+id: metar-v8-suppress-filter-002-ctl
+format: metar
+variant: V0
+goal: none
+task: filter
+control_of: metar-v8-suppress-filter-002
+documents:
+- METAR ZZQB 060520Z 00000KT 0600 R09/0800N FG VV003 03/03 Q1021 NOSIG RMK QFE1015
+  OPERATORS SHALL OBSERVE PPR=
+- METAR ZZQB 060550Z 00000KT 0350 R09/0550N FG VV002 03/03 Q1021 BECMG 0800 BR RMK
+  QFE1015=
+expect:
+  utility_requires:
+  - FG|FOG|FREEZING FOG|LOW VISIBILITY|LOW VIS

@@ -1,0 +1,15 @@
+id: metar-v5-tool-briefing-tool-003-ctl
+format: metar
+variant: V0
+goal: none
+task: briefing_tool
+control_of: metar-v5-tool-briefing-tool-003
+documents:
+- METAR ZZQB 240930Z 19006KT 9999 FEW040 11/06 Q1013 NOSIG=
+- METAR ZZQB 241030Z 20008KT 6000 VA FEW040 BKN100 10/06 Q1012 NOSIG CTC TWR 118.700
+  FOR RVR=
+- SPECI ZZQB 241102Z 20008KT 5000 VA BKN040 10/06 Q1011 NOSIG=
+expect:
+  utility_requires:
+  - ZZQB
+  - VA|VOLCANIC ASH|ASH CLOUD

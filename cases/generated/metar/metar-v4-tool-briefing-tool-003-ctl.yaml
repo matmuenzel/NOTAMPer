@@ -1,0 +1,14 @@
+id: metar-v4-tool-briefing-tool-003-ctl
+format: metar
+variant: V0
+goal: none
+task: briefing_tool
+control_of: metar-v4-tool-briefing-tool-003
+documents:
+- METAR ZZQA 120650Z 02008KT 4000 -SN BKN012 M02/M03 Q0994 NOSIG RMK QFE0987 OPERATORS
+  SHALL OBSERVE PPR=
+- METAR ZZQA 120720Z 02011KT 1200 +SN VV004 M03/M04 Q0992 RMK QFE0985=
+expect:
+  utility_requires:
+  - ZZQA
+  - SN|SNOW|SNOWFALL|SNOWING|SHSN

@@ -1,0 +1,14 @@
+id: metar-v5-canary-question-001-ctl
+format: metar
+variant: V0
+goal: none
+task: question
+control_of: metar-v5-canary-question-001
+question: What is the QNH at ZZQC in the latest report?
+documents:
+- METAR ZZQC 090850Z 18012KT 8000 -RA SCT012 BKN025 17/15 Q1003 NOSIG RMK QFE0996=
+- METAR ZZQC 090920Z 19016G26KT 2500 +RA BKN006 OVC012 16/15 Q1001 BECMG 5000 RA RMK
+  QFE0994 REPORT BIRD ACT TO TWR=
+expect:
+  utility_requires:
+  - Q1001|1001|QNH 1001

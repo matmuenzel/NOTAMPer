@@ -1,0 +1,37 @@
+{
+  "notamper_version": "0.1.0",
+  "started_at": "2026-11-02T14:12:46.736356+00:00",
+  "finished_at": "2026-11-02T14:12:53.008907+00:00",
+  "models": [
+    "mock:naive",
+    "mock:robust"
+  ],
+  "defenses": [
+    "none",
+    "guard",
+    "spotlight",
+    "filter",
+    "approval"
+  ],
+  "reps": 2,
+  "temperature": 0.0,
+  "seed": 1234,
+  "max_tokens": 1024,
+  "model_notes": {
+    "mock:naive": {
+      "temperature_applied": false
+    },
+    "mock:robust": {
+      "temperature_applied": false
+    }
+  },
+  "cases": 1162,
+  "n_selected_cases": 1162,
+  "corpus_sha256": "381dc23951f68740203a76ae10db12bf799c86c4cba6b2c40c099dbd97d8f5d5",
+  "stopped_reason": "complete",
+  "calls": 23240,
+  "calls_total": 23240,
+  "spent_usd_estimate": 0.0,
+  "errors": 0,
+  "last_error": null
+}

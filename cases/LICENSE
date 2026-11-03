@@ -1,0 +1,12 @@
+The NOTAMper corpus (all files under cases/) is licensed under the
+Creative Commons Attribution 4.0 International License (CC BY 4.0).
+Full text: https://creativecommons.org/licenses/by/4.0/legalcode
+
+You are free to share and adapt the material for any purpose, even commercially,
+provided you give appropriate credit, link to the license, and indicate changes.
+
+Attribution: "NOTAMper corpus" by Matthias Münzel, CC BY 4.0.
+
+All documents are synthetic. Aerodromes (ZZQA, ZZQB, ZZQC), the FIR (ZZXX) and the
+recipient ops-audit@example.invalid are fictional. The corpus contains harmless
+injection payloads for security research; it must not be used in live operations.

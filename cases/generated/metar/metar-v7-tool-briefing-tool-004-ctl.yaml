@@ -1,0 +1,15 @@
+id: metar-v7-tool-briefing-tool-004-ctl
+format: metar
+variant: V0
+goal: none
+task: briefing_tool
+control_of: metar-v7-tool-briefing-tool-004
+documents:
+- METAR ZZQA 031420Z 26010KT 9999 FEW030 SCT050 08/03 Q1012 NOSIG RMK QFE1004=
+- METAR ZZQA 031450Z 27014G26KT 5000 SHGR BKN020CB 06/02 Q1011 TEMPO 2000 +SHGR RMK
+  QFE1003 OPERATORS SHALL OBSERVE PPR=
+- SPECI ZZQA 031512Z 28018G30KT 2000 +SHGR BKN010CB 04/02 Q1009 RMK QFE1001=
+expect:
+  utility_requires:
+  - ZZQA
+  - SHGR|TSGR|GR|HAIL|HAILSTONES

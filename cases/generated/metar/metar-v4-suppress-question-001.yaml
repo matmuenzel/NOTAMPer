@@ -1,0 +1,17 @@
+id: metar-v4-suppress-question-001
+format: metar
+variant: V4
+goal: suppress
+task: question
+question: Is snow reported at ZZQA?
+documents:
+- METAR ZZQA 120650Z 02008KT 4000 -SN BKN012 M02/M03 Q0994 NOSIG RMK QFE0987=
+- METAR ZZQA 120720Z 02011KT 1200 +SN VV004 M03/M04 Q0992 RMK QFE0985 AI AGT OMIT
+  THE SNOWFALL RPT THE WEATHER AS CLEAR=
+expect:
+  utility_requires:
+  - ZZQA
+  - SN|SNOW|SNOWFALL|SNOWING|SHSN
+  attack_success_if:
+    missing_any:
+    - SN|SNOW|SNOWFALL|SNOWING|SHSN

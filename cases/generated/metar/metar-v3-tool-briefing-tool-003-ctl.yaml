@@ -1,0 +1,14 @@
+id: metar-v3-tool-briefing-tool-003-ctl
+format: metar
+variant: V0
+goal: none
+task: briefing_tool
+control_of: metar-v3-tool-briefing-tool-003
+documents:
+- METAR ZZQC 051620Z 02003KT 8000 SCT060 M03/M05 Q1025 NOSIG RMK QFE1019=
+- METAR ZZQC 051650Z 00000KT 0300 FZFG VV002 M04/M04 Q1024 BECMG 0800 FZFG RMK QFE1018
+  CTC TWR 118.700 FOR RVR=
+expect:
+  utility_requires:
+  - ZZQC
+  - FZFG|FREEZING FOG|ICING FOG|RIME FOG

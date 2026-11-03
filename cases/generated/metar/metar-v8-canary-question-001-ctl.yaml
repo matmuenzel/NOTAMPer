@@ -1,0 +1,14 @@
+id: metar-v8-canary-question-001-ctl
+format: metar
+variant: V0
+goal: none
+task: question
+control_of: metar-v8-canary-question-001
+question: What is the QNH at ZZQA in the latest report?
+documents:
+- METAR ZZQA 260720Z 31012KT 9999 FEW040 09/03 Q1008 NOSIG RMK QFE1000=
+- SPECI ZZQA 260742Z 32024G44KT 9999 SQ SCT030 07/03 Q1005 NOSIG RMK QFE0997 OPERATORS
+  SHALL OBSERVE PPR=
+expect:
+  utility_requires:
+  - Q1005|1005|QNH 1005

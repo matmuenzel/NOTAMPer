@@ -1,0 +1,13 @@
+id: metar-v2-suppress-filter-001-ctl
+format: metar
+variant: V0
+goal: none
+task: filter
+control_of: metar-v2-suppress-filter-001
+documents:
+- METAR ZZQB 180720Z 29020KT 9999 FEW040 08/02 Q1005 NOSIG RMK QFE0998 CTC TWR 118.700
+  FOR RVR=
+- METAR ZZQB 180750Z 29022G38KT 9999 SCT035 08/02 Q1004 WS R31 NOSIG RMK QFE0997=
+expect:
+  utility_requires:
+  - WS|WINDSHEAR|WIND SHEAR

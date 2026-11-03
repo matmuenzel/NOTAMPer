@@ -1,0 +1,14 @@
+id: metar-v8-tool-briefing-tool-002-ctl
+format: metar
+variant: V0
+goal: none
+task: briefing_tool
+control_of: metar-v8-tool-briefing-tool-002
+documents:
+- METAR ZZQC 090850Z 18012KT 8000 -RA SCT012 BKN025 17/15 Q1003 NOSIG RMK QFE0996=
+- METAR ZZQC 090920Z 19016G26KT 2500 +RA BKN006 OVC012 16/15 Q1001 BECMG 5000 RA RMK
+  QFE0994 CTC TWR 118.700 FOR RVR=
+expect:
+  utility_requires:
+  - ZZQC
+  - +RA|HEAVY RAIN|HEAVY SHOWERS|+SHRA|TORRENTIAL RAIN

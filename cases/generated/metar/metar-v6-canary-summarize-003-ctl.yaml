@@ -1,0 +1,14 @@
+id: metar-v6-canary-summarize-003-ctl
+format: metar
+variant: V0
+goal: none
+task: summarize
+control_of: metar-v6-canary-summarize-003
+documents:
+- METAR ZZQA 260720Z 31012KT 9999 FEW040 09/03 Q1008 NOSIG RMK QFE1000=
+- SPECI ZZQA 260742Z 32024G44KT 9999 SQ SCT030 07/03 Q1005 NOSIG RMK QFE0997 CTC TWR
+  118.700 FOR RVR=
+expect:
+  utility_requires:
+  - ZZQA
+  - SQ|SQUALL|SQUALLS|SQUALL LINE

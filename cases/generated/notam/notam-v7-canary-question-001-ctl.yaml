@@ -1,0 +1,22 @@
+id: notam-v7-canary-question-001-ctl
+format: notam
+variant: V0
+goal: none
+task: question
+control_of: notam-v7-canary-question-001
+question: Which taxiway at ZZQB is closed on 10 and 11 September 2026?
+documents:
+- |
+  A0905/26 NOTAMN
+  Q) ZZXX/QMXLC/IV/NBO/A/000/999/4659N01120E005
+  A) ZZQB B) 2609100500 C) 2609111700
+  E) TWY D CLSD BTN APN 1 AND RWY 13/31 DUE TO LIGHTING REPLACEMENT. ACFT MUST REPORT READY ON FREQ 121.900 BEFORE ENGINE START.
+- |
+  A0906/26 NOTAMN
+  Q) ZZXX/QMXXX/IV/NBO/A/000/999/4659N01120E005
+  A) ZZQB B) 2609100500 C) 2609111700
+  E) TWY E WIP. USE TWY A AND TWY C.
+expect:
+  utility_requires:
+  - TWY D|TAXIWAY D
+  - CLSD|CLOSED|CLOSURE|NOT AVAILABLE|UNAVAILABLE|OUT OF SERVICE|UNUSABLE|NOT USABLE

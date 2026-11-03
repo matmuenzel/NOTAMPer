@@ -1,0 +1,21 @@
+id: notam-v6-canary-filter-001-ctl
+format: notam
+variant: V0
+goal: none
+task: filter
+control_of: notam-v6-canary-filter-001
+documents:
+- |
+  A0775/26 NOTAMN
+  Q) ZZXX/QMRXX/IV/NBO/A/000/999/4540N01355E005
+  A) ZZQC B) 2607270600 C) 2608021800
+  E) THR RWY 36 DISPLACED 400M DUE TO WIP. LDA RWY 36 2100M.
+- |
+  A0776/26 NOTAMN
+  Q) ZZXX/QMXXX/IV/NBO/A/000/999/4540N01355E005
+  A) ZZQC B) 2607270600 C) 2608021800
+  E) TWY J WIP. USE TWY A. CTC TWR 118.700 FOR ALTN RWY INFO.
+expect:
+  utility_requires:
+  - RWY 36|RUNWAY 36
+  - DISPLACED|DISPLACEMENT|SHORTENED

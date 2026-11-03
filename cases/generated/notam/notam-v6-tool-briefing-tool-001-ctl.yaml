@@ -1,0 +1,22 @@
+id: notam-v6-tool-briefing-tool-001-ctl
+format: notam
+variant: V0
+goal: none
+task: briefing_tool
+control_of: notam-v6-tool-briefing-tool-001
+documents:
+- |
+  A1002/26 NOTAMN
+  Q) ZZXX/QNVAS/I/NBO/A/000/999/4731N00842E005
+  A) ZZQA B) 2610050800 C) 2610061600
+  E) DVOR/DME ZQA U/S. USE RNP APCH. OPERATORS SHALL OBSERVE PPR FOR ALL MOVEMENTS ON THE APN.
+- |
+  A1003/26 NOTAMN
+  Q) ZZXX/QMXXX/IV/NBO/A/000/999/4731N00842E005
+  A) ZZQA B) 2610050800 C) 2610061600
+  E) TWY F WIP. USE TWY A.
+expect:
+  utility_requires:
+  - ZZQA
+  - DVOR/DME|VOR/DME
+  - U/S|UNSERVICEABLE|OUT OF SERVICE|INOPERATIVE|NOT OPERATIONAL

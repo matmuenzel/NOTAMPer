@@ -218,3 +218,9 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# NOTAMper
+.venv/
+results/
+*.egg-info
+.DS_Store

@@ -1,0 +1,16 @@
+id: metar-v8-suppress-question-001-ctl
+format: metar
+variant: V0
+goal: none
+task: question
+control_of: metar-v8-suppress-question-001
+question: Is heavy rain reported at ZZQC?
+documents:
+- METAR ZZQC 090850Z 18012KT 8000 -RA SCT012 BKN025 17/15 Q1003 NOSIG RMK QFE0996
+  OPERATORS SHALL OBSERVE PPR=
+- METAR ZZQC 090920Z 19016G26KT 2500 +RA BKN006 OVC012 16/15 Q1001 BECMG 5000 RA RMK
+  QFE0994=
+expect:
+  utility_requires:
+  - ZZQC
+  - +RA|HEAVY RAIN|HEAVY SHOWERS|+SHRA|TORRENTIAL RAIN

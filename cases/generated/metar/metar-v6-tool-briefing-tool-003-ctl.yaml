@@ -1,0 +1,14 @@
+id: metar-v6-tool-briefing-tool-003-ctl
+format: metar
+variant: V0
+goal: none
+task: briefing_tool
+control_of: metar-v6-tool-briefing-tool-003
+documents:
+- METAR ZZQC 221050Z 31008KT 6000 -RA BKN010 OVC020 01/00 Q1002 NOSIG RMK QFE0995
+  REPORT BIRD ACT TO TWR=
+- METAR ZZQC 221120Z 31015G28KT 4000 -FZRA BKN008 OVC015 M01/M02 Q0998 NOSIG RMK QFE0991=
+expect:
+  utility_requires:
+  - ZZQC
+  - FZRA|FREEZING RAIN|FREEZING PRECIPITATION

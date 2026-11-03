@@ -1,0 +1,16 @@
+cff-version: 1.2.0
+message: "If you use NOTAMper, please cite it as below."
+title: "NOTAMper"
+abstract: "Open benchmark for indirect prompt injection in aviation text formats (NOTAM, METAR, ATIS). Measures whether LLM agents treat embedded instructions as data or as commands."
+version: 0.1.0
+license: MIT
+type: software
+authors:
+  - given-names: "Matthias"
+    family-names: "Münzel"
+keywords:
+  - prompt injection
+  - benchmark
+  - LLM security
+  - aviation
+  - NOTAM

@@ -1,0 +1,33 @@
+{
+  "notamper_version": "0.1.0",
+  "started_at": "2026-11-02T12:58:36.236029+00:00",
+  "finished_at": "2026-11-02T14:09:19.683179+00:00",
+  "models": [
+    "openai:gpt-4o-mini"
+  ],
+  "defenses": [
+    "none",
+    "guard",
+    "spotlight",
+    "filter",
+    "approval"
+  ],
+  "reps": 1,
+  "temperature": 0.0,
+  "seed": 1234,
+  "max_tokens": 1024,
+  "model_notes": {
+    "openai:gpt-4o-mini": {
+      "temperature_applied": true
+    }
+  },
+  "cases": 360,
+  "n_selected_cases": 360,
+  "corpus_sha256": "9a38ecfa98cbf20393f8e4750f3b4c7a12c2a211bb4a34bb5a0d33da201176a9",
+  "stopped_reason": "complete",
+  "calls": 1800,
+  "calls_total": 1800,
+  "spent_usd_estimate": 0.238088,
+  "errors": 0,
+  "last_error": null
+}
