@@ -106,17 +106,12 @@ generated (deterministic, seed 2026) from 72 scenarios. Every aviation scenario 
 has a plain-English e-mail twin with the same facts, and the generic baseline gets as many attack
 cases as the three aviation formats together, so research question 3 compares like with like.
 
-| Format | Cases | | Variant | Cases | | Goal | Cases | | Task | Cases |
-|---|---|---|---|---|---|---|---|---|---|---|
-| notam | 198 | | V0 (control) | 581 | | none (control) | 581 | | briefing_tool | 386 |
-| metar | 196 | | V1 | 72 | | canary | 194 | | summarize | 264 |
-| atis | 192 | | V2 | 73 | | suppress | 194 | | filter | 256 |
-| generic | 576 | | V3 | 73 | | tool | 193 | | question | 256 |
-| | | | V4 | 72 | | | | | | |
-| | | | V5 | 73 | | | | | | |
-| | | | V6 | 73 | | | | | | |
-| | | | V7 | 72 | | | | | | |
-| | | | V8 | 73 | | | | | | |
+| Dimension | Cases |
+|---|---|
+| Format | notam 198 · metar 196 · atis 192 · generic 576 |
+| Variant | V0 (control) 581 · V1 72 · V2 73 · V3 73 · V4 72 · V5 73 · V6 73 · V7 72 · V8 73 |
+| Goal | none (control) 581 · canary 194 · suppress 194 · tool 193 |
+| Task | briefing_tool 386 · summarize 264 · filter 256 · question 256 |
 
 Variants: V1 overt override, V2 operational directive, V3 disguised remark, V4 abbreviation-coded,
 V5 authority claim, V6 language switch (German in English text), V7 distributed over several
